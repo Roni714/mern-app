@@ -1,9 +1,11 @@
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 const UserModel = require("../Models/User");
+const connectDB = require('../Models/db');
 
 const signup = async (req, res) => {
     try {
+        await connectDB();
         const { name, email, password } = req.body;
         const user = await UserModel.findOne({ email });
         if (user) {
