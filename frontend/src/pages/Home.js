@@ -25,9 +25,9 @@ function Home() {
             const url = "https://mern-app-api-bice.vercel.app/products";
             const headers = {
                 headers: {
-                    'Authorization': localStorage.getItem('token')
+                    'Authorization': `Bearer ${localStorage.getItem('token')}`
                 }
-            }
+            };
             const response = await fetch(url, headers);
             const result = await response.json();
             console.log(result);
