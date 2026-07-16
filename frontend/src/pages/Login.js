@@ -27,7 +27,7 @@ function Login() {
             return handleError('email and password are required')
         }
         try {
-            const url = `https://mern-app-api-bice.vercel.app/auth/login`;
+            const url = `https://mern-app-api-virid.vercel.app/auth/login`;
             const response = await fetch(url, {
                 method: "POST",
                 headers: {
