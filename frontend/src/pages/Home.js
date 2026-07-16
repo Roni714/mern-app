@@ -22,7 +22,7 @@ function Home() {
 
     const fetchProducts = async () => {
         try {
-            const url = "https://mern-app-api-bice.vercel.app/products";
+            const url = "https://mern-app-api-virid.vercel.app/products";
             const headers = {
                 headers: {
                     'Authorization': `Bearer ${localStorage.getItem('token')}`
