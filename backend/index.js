@@ -5,7 +5,7 @@ const cors = require('cors');
 const AuthRouter = require('./Routes/AuthRouter');
 const ProductRouter = require('./Routes/ProductRouter')
 
-require('dotenv').config();
+//require('dotenv').config();
 const PORT = process.env.PORT || 8080;
 
 app.get("/ping", (req, res) => {
