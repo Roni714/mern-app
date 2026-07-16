@@ -14,10 +14,7 @@ app.get("/ping", (req, res) => {
 });
 
 app.use(bodyParser.json());
-app.use(cors({
-    origin: ['https://mern-app-api-tau.vercel.app' ]
-    credentials: true
-}));
+app.use(cors());
 app.use('/auth', AuthRouter);
 app.use('/products', ProductRouter);
 
